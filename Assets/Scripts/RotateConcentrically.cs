@@ -7,17 +7,12 @@ public class RotateConcentrically : MonoBehaviour
 {
     [SerializeField] private Transform _targetTransform;
     [SerializeField] private Transform _transform;
-    [SerializeField] private float _speed = 1f;
+    [SerializeField] private float _speed = 3f;
     private float _limitSpeed = 100f;
-    [SerializeField] private float _radius;
+    [SerializeField] private float _radius = 18f;
     private float _angle = 0;
     [Header("Scripts")]
     [SerializeField] private InputHandler _inputHandler;
-    void Start()
-    {
-        if(_transform is null) _transform = this.transform;
-    }
-
 
     void Update()
     {
